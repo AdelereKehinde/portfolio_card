@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card | HNG13 Frontend Stage 0</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article data-testid="test-profile-card" class="profile-card">
+      <header>
+        <h2 data-testid="test-user-name">AdelereKehinde</h2>
+        <img data-testid="test-user-avatar" class="profile-picture"
+        src="images/me.jpg" alt="Profile-picture" />
+      </header>
+
+      <p data-testid="test-user-bio" class="user-bio">
+        Passionate Fullstack Developer with a love for clean code, backend
+        architecture, and coffee ☕. Currently sharpening my skills in the HNG13
+        Internship.
+      </p>
+
+      <section class="time-section">
+        <p>
+          Current time in milliseconds:
+          <span data-testid="test-user-time" id="currentTime"></span>
+        </p>
+      </section>
+
+      <nav aria-label="Social links">
+        <ul data-testid="test-user-social-links" class="social-links">
+          <li>
+            <img src="images/github.png" alt="GitHub" />
+            <a
+              href="https://github.com/AdelereKehinde"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-github"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <img src="images/whatsapp.png" alt="WhatsApp" />
+            <a
+              href="https://wa.me/8142436225"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-whatsapp"
+              >WhatsApp</a
+            >
+          </li>
+          <li>
+            <img src="images/linkedin.png" alt="LinkedIn" />
+            <a
+              href="https://linkedin.com/in/adelere-kehinde-2b4b621ba"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-linkedin"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <section class="hobbies">
+        <div class="hobbies-header">
+          <span class="line-break"></span>
+          <h3>Hobbies</h3>
+          <span class="line-break"></span>
+        </div>
+        <ul data-testid="test-user-hobbies">
+          <li>Coding</li>
+          <li>Football</li>
+          <li>Gaming</li>
+        </ul>
+      </section>
+
+      <section class="dislikes">
+        <div class="hobbies-header">
+          <span class="line-break"></span>
+          <h3>Dislikes</h3>
+          <span class="line-break"></span>
+        </div>
+        <ul data-testid="test-user-dislikes">
+          <li>Laziness</li>
+          <li>Messy code</li>
+          <li>Fighting</li>
+        </ul>
+      </section>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>

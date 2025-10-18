@@ -1,0 +1,235 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: linear-gradient(135deg, #e3cbae 0%, #d8b98d 100%);
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+
+article.profile-card {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    transition: transform 0.3s ease;
+}
+
+article.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Header section with name and profile picture */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+h2[data-testid="test-user-name"] {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Profile picture styling */
+img.profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #e67e22;
+    object-fit: cover;
+}
+
+/* User bio text */
+.user-bio {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    padding: 0 10px;
+}
+
+/* Time section styling */
+.time-section {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #e67e22;
+}
+
+.time-section p {
+    text-align: center;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+#currentTime {
+    color: #e74c3c;
+    font-family: 'Courier New', monospace;
+}
+
+nav[aria-label="Social links"] {
+    margin-bottom: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+
+.social-links li {
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.social-links a:hover {
+    background-color: #3498db;
+    color: white;
+    opacity: 1;
+}
+.hobbies, .dislikes {
+    margin-bottom: 1.5rem;
+}
+
+.hobbies-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.hobbies-header h3 {
+    color: #2c3e50;
+    white-space: nowrap;
+    font-size: 1.2rem;
+}
+
+.line-break {
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, #95a5a6 50%, transparent 100%);
+}
+
+/* Lists styling */
+.hobbies ul, .dislikes ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+.hobbies li, .dislikes li {
+    background: #ecf0f1;
+    padding: 8px 15px;
+    border-radius: 20px;
+    list-style: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.hobbies li:hover {
+    background: #d5dbdb;
+}
+
+.dislikes li {
+    background: #fadbd8;
+}
+
+.dislikes li:hover {
+    background: #f5b7b1;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    article.profile-card {
+        padding: 20px;
+    }
+    
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .hobbies ul, .dislikes ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h2[data-testid="test-user-name"] {
+        font-size: 1.5rem;
+    }
+    
+    .user-bio {
+        font-size: 0.9rem;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #bdc3c7;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #95a5a6;
+}
