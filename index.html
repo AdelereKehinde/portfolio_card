@@ -3,15 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile Card | HNG13 Frontend Stage 0</title>
+    <title>Profile Card | HNG13 Frontend Stage 1</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <nav class="main-nav" data-testid="test-main-navigation">
+      <ul>
+        <li><a href="index.html" data-testid="test-nav-home">Home</a></li>
+        <li><a href="about.html" data-testid="test-nav-about">About Me</a></li>
+        <li><a href="contact.html" data-testid="test-nav-contact">Contact</a></li>
+      </ul>
+    </nav>
+
     <article data-testid="test-profile-card" class="profile-card">
       <header>
         <h2 data-testid="test-user-name">AdelereKehinde</h2>
         <img data-testid="test-user-avatar" class="profile-picture"
-        src="images/me.jpg" alt="Profile-picture" />
+        src="images/profile.jpg" alt="Profile picture of AdelereKehinde" />
       </header>
 
       <p data-testid="test-user-bio" class="user-bio">
